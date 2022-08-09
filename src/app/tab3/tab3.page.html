@@ -16,8 +16,12 @@
   <ion-list>
     <ion-item *ngFor="let cricketer of cricketers">
       <ion-label>{{cricketer.name}}</ion-label>
+      <!-- Colors -->
+      <ion-button color="primary" (click)="detailsOfPlayer(cricketer)">Details</ion-button>
     </ion-item>
     
   </ion-list>
   <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
+  <p>{{ handlerMessage }}</p>
+  <p>{{ roleMessage }}</p>
 </ion-content>
