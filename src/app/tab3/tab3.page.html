@@ -13,5 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-list>
+    <ion-item *ngFor="let cricketer of cricketers">
+      <ion-label>{{cricketer.name}}</ion-label>
+    </ion-item>
+    
+  </ion-list>
+  <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
 </ion-content>
